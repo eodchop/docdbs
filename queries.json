@@ -13,3 +13,14 @@ funding: 12345678901234567890,
     ], foundingDate: new Date(), insertedAt: new Timestamp()
 })
 
+#3.43 accessing docs
+var dsid = db.patients.findOne().diseaseSummary
+dsid
+summary-ryan-1
+db.diseaseSummaries.findOne({_id: dsid
+})
+{ _id: 'summary-ryan-1', 
+    diseases: [ 'asthma', 'sciatica', 'adhd'
+    ]
+}
+
