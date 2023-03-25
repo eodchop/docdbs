@@ -1,0 +1,15 @@
+#Data Types Example
+
+db.companies.insertOne({name: "Fresh Apples Inc",
+isStartup: true, 
+employees: 33, 
+funding: 12345678901234567890,
+ details: {ceo: "mark super"
+    }, tags: [
+        {tile: "super"
+        },
+        {title: "perfect"
+        }
+    ], foundingDate: new Date(), insertedAt: new Timestamp()
+})
+
